@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Tienda C.B.V.V.R.</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -27,11 +27,11 @@
 <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark elegant-color">
         <a class="navbar-brand d-none d-xs-none d-sm-none d-md-none d-lg-block" href="{{ url('/') }}">
-            <img src="https://www.bomberosvilladelrosario.org/wp-content/uploads/2019/09/logo-300x300.png" height="30" class="d-inline-block align-top" alt="mdb logo"> Bomberos Voluntarios Vlla del Rosario
+            <img src="{{ asset('img/Brown Rectangle Photography Logo (1) sas.png') }}" height="30" class="d-inline-block align-top" alt="mdb logo"> {{ config('app.name', 'Laravel') }}
         </a>
 
         <a class="navbar-brand d-block d-xs-none d-sm-block d-md-block d-lg-none" href="{{ url('/') }}">
-            <img src="https://www.bomberosvilladelrosario.org/wp-content/uploads/2019/09/logo-300x300.png" height="30" class="d-inline-block align-top" alt="mdb logo"> Bomberos Store
+            <img src="{{ asset('img/Brown Rectangle Photography Logo (1) sas.png') }}" height="30" class="d-inline-block align-top" alt="mdb logo"> {{ config('app.name', 'Laravel') }}
         </a>
         <!-- Collapse button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -114,12 +114,12 @@
         <div class="carousel-inner" role="listbox" style="height: 300px;">
             <!--First slide-->
             <div class="carousel-item active">
-                <img class="d-block w-100" src="https://www.bomberosvilladelrosario.org/nueva/wp-content/uploads/2020/05/Imagenes-bbrosvilarrosario-261.jpg" alt="First slide">
+                <img class="d-block w-100" src="{{ asset('img/hermes-rivera-OX_en7CXMj4-unsplash.jpg') }}" alt="First slide">
             </div>
             <!--/First slide-->
             <!--Second slide-->
             <div class="carousel-item">
-                <img class="d-block w-100" src="https://www.bomberosvilladelrosario.org/nueva/wp-content/uploads/2020/05/FB_IMG_1434338337187.jpg" alt="Second slide">
+                <img class="d-block w-100" src="{{ asset('img/riyan-ong-j1PxAa2U-T4-unsplash.jpg') }}" alt="Second slide">
             </div>
             <!--/Second slide-->
 
@@ -155,7 +155,7 @@
                 <div class="col-md-6 mt-md-0 mt-3">
 
                     <!-- Content -->
-                    <h5 class="text-uppercase">Cuerpo de Bomberos Voluntarios de Villa del Rosario</h5>
+                    <h5 class="text-uppercase">{{ config('app.name', 'Laravel') }}</h5>
                     <p>Tienda</p>
 
                 </div>
@@ -171,13 +171,13 @@
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="https://www.facebook.com/CBVVR" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+                            <a href="#"><i class="fab fa-facebook fa-3x"></i></a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/Bomberos_VR" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
+                            <a href="#"><i class="fab fa-twitter fa-3x"></i></a>
                         </li>
                         <li>
-                            <a href="mailto:info@bomberosvilladelrosario.org"><i class="far fa-envelope fa-3x"></i></a>
+                            <a href="#"><i class="far fa-envelope fa-3x"></i></a>
                         </li>
                     </ul>
 
@@ -193,7 +193,7 @@
         <!-- Footer Links -->
 
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright  C.B.V.V.R.
+        <div class="footer-copyright text-center py-3">© 2020 Copyright  {{ config('app.name', 'Laravel') }}
 
         </div>
         <!-- Copyright -->

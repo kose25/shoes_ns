@@ -56,7 +56,7 @@ class ComprasController extends Controller
         Compras::insert($datosCompras);
         //return response()->json($datosMarca);
         //return redirect('categorias');
-        return redirect()->away($pselink . '&id_cliente=' . $cedula . '&descripcion_pago=Tienda Bomberos&total_con_iva=' . $valortotal . '&btnPay=Pagar');
+        return redirect()->away($pselink . '&id_cliente=' . $cedula . '&descripcion_pago=Shoes NS&total_con_iva=' . $valortotal . '&btnPay=Pagar');
     }
 
     /**

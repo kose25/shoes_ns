@@ -23,6 +23,11 @@ class User extends Authenticatable implements MustVerifyEmail
         'cedula',
     ];
 
+    public function compras()
+    {
+        return $this->hasMany(Compras::class, 'usuario');
+    }
+
     /**
      * The attributes that should be hidden for arrays.
      *
